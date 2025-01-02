@@ -4,7 +4,7 @@
 
 A small, fast, and scalable bearbones state management solution. Zustand has a comfy API based on hooks. It isn't boilerplate or opinionated, but has enough convention to be explicit and flux-like. Its fun to have such .
 
-![null](https://raw.githubusercontent.com/pmndrs/zustand/main/docs/bear.jpg)
+![Zustand](https://raw.githubusercontent.com/pmndrs/zustand/main/docs/bear.jpg)
 
 
 
