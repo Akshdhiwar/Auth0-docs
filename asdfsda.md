@@ -1,61 +1,45 @@
-# Introduction 
+# Business to Business
 
-## Zustand is the most popular state management library
+## Overview
 
-A small, fast, and scalable bearbones state management solution. Zustand has a comfy API based on hooks. It isn't boilerplate or opinionated, but has enough convention to be explicit and flux-like. Its fun to have such .
+This guidance is relevant to all project stakeholders. We recommend reading it in its entirety at least once, even if you've already started your journey with Auth0. We provide a Project Planning Guide in PDF format, details about how to get started with each phase of the implementation process, and checklists to help you manage the tasks in each phase.
 
-![Zustand](https://raw.githubusercontent.com/pmndrs/zustand/main/docs/bear.jpg)
+## Project Planning Guide
 
+We provide planning guidance in PDF format that you can download and refer to for details about our recommended strategies.
 
+## Multiple Organization Architecture (Multitenancy)
 
-Don't disregard it because it's cute, it has claws! Lots of time was spent to deal with common pitfalls, like the dreaded [zombie child problem](https://react-redux.js.org/api/hooks#stale-props-and-zombie-children), [React concurrency](https://github.com/bvaughn/rfcs/blob/useMutableSource/text/0000-use-mutable-source.md), and [context loss](https://github.com/facebook/react/issues/13332) between mixed renderers. It may be the one state manager in the React space that gets all of these right.
+Many B2B platforms implement some form of isolation and/or branding for their customers' organization, and this can add complexity to any Identity and Access Management (IAM) system. If this applies to you, then we recommend you take some time to read through our guidance and best practice advice for this type of environment.
 
-You can try a live demo [here](https://codesandbox.io/p/sandbox/dazzling-moon-itop4).
+## Get Started
 
+Customers using Auth0 for Business-to-Business (B2B) projects typically share a common set of goals and objectives, and in the sections that follow we'll focus on our real-world customer implementation experiences to help you deliver your solution efficiently.
 
+## Best Practice
 
-# Installation
+Auth0 provides recommendations and best practice suggestions in an ad hoc way throughout this guide in panels like this one. You can also obtain detailed guidance regarding specific functionality by speaking with your account representative or a member of our Auth0 Professional Services team.
 
-Zustand is available as a package on NPM for use:
+## Key Areas
 
-```bash
-# NPM
-npm install zustand
-# Or, use any package manager of your choice.
-```
+- **Architecture**: How to configure your Auth0 tenant architecture affects your B2B IAM implementation.
+- **Provisioning**: About user provisioning functionality and considerations for your B2B IAM implementation.
+- **Authentication**: How authentication works in your B2B IAM implementation.
+- **Branding**: How to configure Auth0 items to reflect your brand and desired user experience.
+- **Deployment Automation**: How Auth0 tooling helps to automate tenant deployment.
+- **Quality Assurance**: About quality assurance considerations for your B2B IAM implementations.
+- **Profile Management**: About user profile management planning considerations for your B2B IAM implementation.
+- **Authorization**: About user authorization and related planning considerations for your B2B IAM implementation.
+- **Logout**: About user logout planning considerations for your B2B IAM implementation.
+- **Operations**: How to operationalize your Auth0 tenant environments.
+- **Launch Preparation**: About launch preparation considerations for your B2B IAM implementation.
+## Implementation Planning Checklists
 
+Use the links below to download a spreadsheet that includes tasks for each phase of a Software Development Lifecycle (SDLC) project:
 
-# First create a store
-
-Your store is a hook! You can put anything in it: primitives, objects, functions. The `set `function merges the state.
-
-```javascript
-import { create } from 'zustand'
-
-const useStore = create((set) => ({
-  bears: 0,
-  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
-  removeAllBears: () => set({ bears: 0 }),
-  updateBears: (newBears) => set({ bears: newBears }),
-}))
-```
-
-
-# Then bind your components, and that's it!
-
-You can use the hook anywhere, without the need of providers. Select your state and the consuming component will re-render when that state changes.
-
-```javascript
-function BearCounter() {
-  const bears = useStore((state) => state.bears)
-  return <h1>{bears} around here...</h1>
-}
-
-function Controls() {
-  const increasePopulation = useStore((state) => state.increasePopulation)
-  return <button onClick={increasePopulation}>one up</button>
-}
-```
-
-
-In next section we will learn about managing state in zustand
+- [Analyze Checklist](#)
+- [Design Checklist](#)
+- [Build Checklist](#)
+- [Test Checklist](#)
+- [Deploy Checklist](#)
+- [Monitor Checklist](#)
