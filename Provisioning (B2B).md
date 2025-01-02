@@ -16,7 +16,7 @@ While Auth0 supports numerous workflows, web-based workflows using Auth0 Univers
 - Should you use Auth0 as an identity store?
 - Can you use your own (legacy) identity store with Auth0?
 - How do you migrate user identities from your identity store to Auth0?
-- Can your users sign up using their organizationÃÂ¢ÃÂÃÂs identity provider?
+- Can your users sign up using their organization's identity provider?
 - Can your users be invited or self-register?
 ## Provisioning Organization Users
 
@@ -24,11 +24,11 @@ One of the first determinations to make when providing your service(s) to other 
 
 ### Isolated to the Organization
 
-Every user belongs to exactly one organization. It would not make sense for that user to be a part of more than one organization, and even if they were, it would make sense for them to have a separate ÃÂ¢ÃÂÃÂidentityÃÂ¢ÃÂÃÂ for that other organization.
+Every user belongs to exactly one organization. It would not make sense for that user to be a part of more than one organization, and even if they were, it would make sense for them to have a separate 'identity' for that other organization.
 
 ### Shared Between Organizations
 
-Users either create credentials in your company, or they can access other organizations' instances of your application using credentials from their own organization. A user may be authorized to access more than one organizationÃÂ¢ÃÂÃÂs instance of the application.
+Users either create credentials in your company, or they can access other organizations' instances of your application using credentials from their own organization. A user may be authorized to access more than one organization's instance of the application.
 
 ## Provisioning Organizations
 
