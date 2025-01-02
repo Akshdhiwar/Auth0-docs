@@ -20,11 +20,11 @@ Consider both security and user experience when designing how you will authentic
 - How will you provide a good user experience as you migrate away from any legacy authentication system?
 - What should you consider when integrating applications with Auth0?
 - Do you need to provide multi-factor authentication?
-- What do you do if you have a service that doesn’t have a way for the user to log in ahead of time?
+- What do you do if you have a service that doesnât have a way for the user to log in ahead of time?
 - Can you pass the same user access token from one API to another?
 - What do you do if you need to isolate users by organization?
 - How will you handle identifying which organization users belong to?
-- What’s the benefit of providing enterprise connections for your organizations?
+- Whatâs the benefit of providing enterprise connections for your organizations?
 ## Universal Login
 
 Auth0 Universal Login provides users with a safe and secure experience, whether you choose to provide user ID/password credentials sign-in or allow Bring Your Own Identity scenarios via Social Login. There are brand recognition benefits to centralizing the login experience with Universal Login, even if you have product-specific branding requirements.
@@ -61,4 +61,4 @@ We provide planning guidance in PDF format that you can download and refer to fo
 
 ## Multiple Organization Architecture (Multitenancy)
 
-Many B2B platforms implement some form of isolation and/or branding for their customers’ organization, adding complexity to any Identity and Access Management (IAM) system. We recommend taking time to read through our guidance and best practice advice for this type of environment.
+Many B2B platforms implement some form of isolation and/or branding for their customer's organization, adding complexity to any Identity and Access Management (IAM) system. We recommend taking time to read through our guidance and best practice advice for this type of environment.

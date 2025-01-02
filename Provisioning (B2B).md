@@ -2,21 +2,21 @@
 
 ## Overview
 
-Determining how users get signed up is important to address early, and the decisions you make here will influence many of the decisions you will need to make going forward. We’ve found there are a typical set of patterns for how users will get added to your system, and things to take note of when considering workflow design too.
+Determining how users get signed up is important to address early, and the decisions you make here will influence many of the decisions you will need to make going forward. We've found there are a typical set of patterns for how users will get added to your system, and things to take note of when considering workflow design too.
 
 ## Best Practice
 
-While Auth0 supports numerous workflows, web-based workflows using Auth0 Universal Login for sign-up are considered both industry and Auth0 best practice as they provide for optimal functionality and the best security. Auth0 supports user sign-up via a number of different identity providers. During sign-up, Auth0 provisions the user profile so that it contains the user’s account information.
+While Auth0 supports numerous workflows, web-based workflows using Auth0 Universal Login for sign-up are considered both industry and Auth0 best practice as they provide for optimal functionality and the best security. Auth0 supports user sign-up via a number of different identity providers. During sign-up, Auth0 provisions the user profile so that it contains the userâs account information.
 
 ## Key Considerations
 
-- Does a user get added to your company's domain or do they belong to or remain in their organization’s domain?
+- Does a user get added to your company's domain or do they belong to or remain in their organizationâs domain?
 - If the user stays in their own domain, do they belong to a single organization or can they belong to multiple organizations?
 - How do you provision the organization itself in your system?
 - Should you use Auth0 as an identity store?
 - Can you use your own (legacy) identity store with Auth0?
 - How do you migrate user identities from your identity store to Auth0?
-- Can your users sign up using their organization’s identity provider?
+- Can your users sign up using their organizationâs identity provider?
 - Can your users be invited or self-register?
 ## Provisioning Organization Users
 
@@ -24,11 +24,11 @@ One of the first determinations to make when providing your service(s) to other 
 
 ### Isolated to the Organization
 
-Every user belongs to exactly one organization. It would not make sense for that user to be a part of more than one organization, and even if they were, it would make sense for them to have a separate “identity” for that other organization.
+Every user belongs to exactly one organization. It would not make sense for that user to be a part of more than one organization, and even if they were, it would make sense for them to have a separate âidentityâ for that other organization.
 
 ### Shared Between Organizations
 
-Users either create credentials in your company, or they can access other organizations' instances of your application using credentials from their own organization. A user may be authorized to access more than one organization’s instance of the application.
+Users either create credentials in your company, or they can access other organizations' instances of your application using credentials from their own organization. A user may be authorized to access more than one organizationâs instance of the application.
 
 ## Provisioning Organizations
 
@@ -69,4 +69,4 @@ We provide planning guidance in PDF format that you can download and refer to fo
 
 ## Multiple Organization Architecture (Multitenancy)
 
-Many B2B platforms implement some form of isolation and/or branding for their customers’ organization, and this can add complexity to any Identity and Access Management (IAM) system. We recommend you take some time to read through our guidance and best practice advice for this type of environment.
+Many B2B platforms implement some form of isolation and/or branding for their customer's organization, and this can add complexity to any Identity and Access Management (IAM) system. We recommend you take some time to read through our guidance and best practice advice for this type of environment.
