@@ -1,4 +1,4 @@
-# Architecture (B2B)
+# Architecture (B2B) 
 
 ## Overview
 
