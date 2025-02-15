@@ -1,4 +1,4 @@
-# Introduction AKASH
+# Introduction AKAS
 
 ## Zustand is the most popular state management library
 
